@@ -10,6 +10,7 @@ import DeptHeadDashboard from "./pages/dashboard/department-head";
 import AdminDashboard from "./pages/dashboard/admin";
 import CreateAssignment from "./pages/admin/CreateAssignment";
 import ViewAssignment from "./pages/admin/ViewAssignment";
+import MapComponent from "./pages/admin/MapComponent";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/dashboard/admin" element={<AdminDashboard/>} />
           <Route path="/admin/create-assignment" element={<CreateAssignment/>} />
           <Route path="/admin/view-assignment" element={<ViewAssignment/>} />
+          <Route path="/admin/map-plotter" element={<MapComponent isAdmin={true}/>} />
         </Routes>
       </Router>
     </>

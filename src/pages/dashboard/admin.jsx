@@ -45,6 +45,19 @@ const AdminDashboard = () => {
                 </div>
                 <p className="text-sm text-gray-600">Review all assigned tasks for departments or contractors.</p>
               </Link>
+
+              <Link
+                to="/admin/map-plotter"
+                className="bg-white border border-gray-200 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="text-xl font-semibold text-blue-700 group-hover:text-blue-800">Map Plotter</h2>
+                  <span className="text-blue-600 text-lg">🗺️</span>
+                </div>
+                <p className="text-sm text-gray-600">Visualize and mark regions on a map interactively.</p>
+              </Link>
+
+
             </div>
           </>
         ) : (

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import MapComponent from "../admin/MapComponent";
 
 const CitizenDashboard = () => {
   const [userInfo, setUserInfo] = useState({ fullName: "" });
@@ -164,6 +165,8 @@ const CitizenDashboard = () => {
           <p className="text-center text-gray-600">No assignments found.</p>
         )}
       </div>
+
+      <MapComponent/>
     </div>
   );
 };
